@@ -20,7 +20,7 @@ C'est une technique d'extraction automatisée de données à partir de sites web
 
 ## Quelques Screens : 
 
-<img width="220" alt="Screenshot 2025-06-21 at 23 47 08" src="https://github.com/user-attachments/assets/1e6d6bce-dca8-406a-b6f4-754700c65041" />
+<img width="222" alt="Screenshot 2025-06-21 at 23 48 23" src="https://github.com/user-attachments/assets/9182ce0e-3341-4b07-99a8-a31703950ae1" />
 <img width="212" alt="Screenshot 2025-06-21 at 23 19 00" src="https://github.com/user-attachments/assets/91dbfde9-1656-4a34-a2b9-5b95c0df1612" />
 <img width="212" alt="Screenshot 2025-06-21 at 23 18 46" src="https://github.com/user-attachments/assets/a3d9a525-4afa-4f8c-a1b7-ec7e3981b5a2" /> 
 <img width="213" alt="Screenshot 2025-06-21 at 23 15 18" src="https://github.com/user-attachments/assets/0d3b1226-5f56-46f7-980e-fac1bc395568" />
