@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/teamStatsFragment"
+        android:icon="@drawable/ic_stats"
+        android:title="Stats"
+        android:contentDescription="desc_stats" />
+
+    <item
+        android:id="@+id/MapFragment"
+        android:icon="@drawable/ic_live_map"
+        android:title="Map"
+        android:contentDescription="desc_live_map" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Profil"
+        android:contentDescription="desc_profile" />
+</menu>

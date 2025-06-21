@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "185013013291",
+    "project_id": "collecteterrain-13a64",
+    "storage_bucket": "collecteterrain-13a64.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185013013291:android:4d954a37f95c13f485136e",
+        "android_client_info": {
+          "package_name": "com.example.collecteterrainapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC10qqdPFE5p3uuqpskHb8ve23L3tKaVi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

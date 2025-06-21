@@ -1,0 +1,56 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manager_navigation"
+    app:startDestination="@id/teamStatsFragment">
+
+    <fragment
+        android:id="@+id/teamStatsFragment"
+        android:name="com.example.collecteterrainapp.manager.TeamStatsFragment"
+        android:label="Statistiques Équipe"
+        tools:layout="@layout/fragment_team_stats">
+        <action
+            android:id="@+id/action_teamStatsFragment_to_representativeDetailFragment"
+            app:destination="@id/representativeDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MapFragment"
+        android:name="com.example.collecteterrainapp.manager.MapFragment"
+        android:label="Carte"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.collecteterrainapp.shared.ProfileFragment"
+        android:label="Profil Manager"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/representativeDetailFragment"
+        android:name="com.example.collecteterrainapp.manager.RepresentativeDetailFragment"
+        android:label="Détail Représentant"
+        tools:layout="@layout/fragment_representative_detail">
+        <argument
+            android:name="representative_username"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_representativeDetailFragment_to_collecteDetailFragment_manager"
+            app:destination="@id/collecteDetailFragment_manager" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/collecteDetailFragment_manager"
+        android:name="com.example.collecteterrainapp.representative.CollecteDetailFragment" 
+        android:label="Détail Collecte (Manager)"
+        tools:layout="@layout/fragment_collecte_detail">
+        <argument android:name="nomCollecte" app:argType="string" />
+        <argument android:name="amount" app:argType="float" />
+        <argument android:name="comment" app:argType="string" />
+        <argument android:name="latitude" app:argType="float" />
+        <argument android:name="longitude" app:argType="float" />
+        <argument android:name="timestamp" app:argType="long" />
+        <argument android:name="photoUrl" app:argType="string" app:nullable="true" />
+    </fragment>
+
+</navigation>

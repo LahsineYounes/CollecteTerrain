@@ -1,0 +1,58 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/collecteFragment">
+
+    <fragment
+        android:id="@+id/collecteFragment"
+        android:name="com.example.collecteterrainapp.representative.CollecteFragment"
+        android:label="Collectes"
+        tools:layout="@layout/fragment_collecte" >
+        <action
+            android:id="@+id/action_collecteFragment_to_collecteDetailFragment"
+            app:destination="@id/collecteDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addCollecteFragment"
+        android:name="com.example.collecteterrainapp.representative.AddCollecteFragment"
+        android:label="Ajouter une Collecte"
+        tools:layout="@layout/fragment_add_collecte" >
+        <action
+            android:id="@+id/action_addCollecteFragment_to_collecteFragment"
+            app:destination="@id/collecteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/collecteDetailFragment"
+        android:name="com.example.collecteterrainapp.representative.CollecteDetailFragment"
+        android:label="Détail Collecte"
+        tools:layout="@layout/fragment_collecte_detail" >
+        <argument
+            android:name="nomCollecte"
+            app:argType="string" />
+        <argument
+            android:name="amount"
+            app:argType="float" />
+        <argument
+            android:name="comment"
+            app:argType="string" 
+            app:nullable="true"/>
+        <argument
+            android:name="latitude"
+            app:argType="float" />
+        <argument
+            android:name="longitude"
+            app:argType="float" />
+        <argument
+            android:name="timestamp"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.collecteterrainapp.shared.ProfileFragment"
+        android:label="Profil"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
